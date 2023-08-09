@@ -8,7 +8,10 @@
       <input type="text" name="username" placeholder="username" />
     </label>
 
- 
+    <label> Email
+      <input name="email" placeholder="rockstar@ironhack.com" />
+    </label>
+
     <label> Password
       <input type="password" name="password" placeholder="********" />
     </label>
@@ -16,5 +19,8 @@
     <button type="submit">Create account</button>
  
     {{!-- error message will be added here --}}
+    {{#if errorMessage}}
+    <p class="error">{{errorMessage}}</p>
+  {{/if}}
   </form>
 </div>
